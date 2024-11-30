@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-board">
+            <div class="player player1">
+                <h2>Player 1 (Solids)</h2>
+                <p>Score: <span id="player1Score">0</span></p>
+            </div>
+            <div class="turn-indicator">
+                <p id="currentTurn">Player 1's Turn</p>
+            </div>
+            <div class="player player2">
+                <h2>Player 2 (Stripes)</h2>
+                <p>Score: <span id="player2Score">0</span></p>
+            </div>
+        </div>
+        <canvas id="poolCanvas" tabindex="1"></canvas>
+        <div class="controls">
+            <button id="resetButton">New Game</button>
+            <div class="power-container">
+                <div class="power-label">Shot Power</div>
+                <div class="power-meter">
+                    <div id="powerBar"></div>
+                </div>
+                <div id="robotPowerIndicator" class="robot-power-indicator"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
